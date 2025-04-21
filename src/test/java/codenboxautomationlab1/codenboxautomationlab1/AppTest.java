@@ -60,8 +60,9 @@ public class AppTest {
 		WebElement Dropdown = driver.findElement(By.id("dropdown-class-example"));
 		Select select = new Select(Dropdown);
 		List<WebElement> Option = select.getOptions();
-		int RandomDropdownIndex = rand.nextInt(Option.size()-1+1);
+		int RandomDropdownIndex = rand.nextInt(Option.size()-1)+1;
 		select.selectByIndex(RandomDropdownIndex);
+		
 		
 		
 	}
